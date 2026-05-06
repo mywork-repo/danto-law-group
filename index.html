@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Danto Law Group is Indonesia's premier aviation law firm, specializing in air accident litigation, international air law, and regulatory compliance. Led by expert Columbanus Priaardanto.">
+  <meta name="keywords" content="Aviation Law, Indonesia Law Firm, Air Accident Litigation, Columbanus Priaardanto, Aircraft Liability, Jakarta Lawyer">
+  <meta name="author" content="Danto Law Group">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dantolawgroup.com/">
+  <meta property="og:title" content="Danto Law Group | Aviation Law Specialists">
+  <meta property="og:description" content="Indonesia's leading legal experts in aviation law, representing clients in major accident claims and international regulatory matters.">
+  <meta property="og:image" content="Danto_Law_Firm_Team_Enhanced.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://dantolawgroup.com/">
+  <meta property="twitter:title" content="Danto Law Group | Aviation Law Specialists">
+  <meta property="twitter:description" content="Indonesia's leading legal experts in aviation law, representing clients in major accident claims and international regulatory matters.">
+  <meta property="twitter:image" content="Danto_Law_Firm_Team_Enhanced.png">
+
+  <title>Danto Law Group | Aviation Law Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E4C97A;
+      --gold-dark: #9A7A2F;
+      --black: #0A0A0A;
+      --dark: #111111;
+      --dark2: #1A1A1A;
+      --dark3: #222222;
+      --white: #F8F5EF;
+      --gray: #888888;
+      --gray-light: #BBBBBB;
+      --accent: #C9A84C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
+
+
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 60px;
+      transition: all 0.4s ease;
+    }
+
+    nav.scrolled {
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 16px 60px;
+      border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    .nav-logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-logo-text .firm-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 2px;
+      line-height: 1;
+    }
+
+    .nav-logo-text .tagline {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--gray-light);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      background: rgba(201, 168, 76, 0.08);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      padding: 7px 14px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: var(--gray);
+      transition: all 0.3s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .lang-btn:not(.active):hover {
+      color: var(--gold);
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #0A0A0A 0%, #1A1208 50%, #0A0A0A 100%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(circle, rgba(201, 168, 76, 0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 60px;
+      max-width: 900px;
+    }
+
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.3s ease forwards;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(56px, 8vw, 110px);
+      font-weight: 300;
+      line-height: 0.95;
+      color: var(--white);
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.5s ease forwards;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--gray-light);
+      max-width: 540px;
+      margin-bottom: 52px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.7s ease forwards;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.9s ease forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 16px 36px;
+      background: var(--gold);
+      color: var(--black);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--white);
+      transform: translateX(-100%);
+      transition: transform 0.4s ease;
+    }
+
+    .btn-primary:hover::before {
+      transform: translateX(0);
+    }
+
+    .btn-primary span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gray-light);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      color: var(--gold);
+    }
+
+    .btn-arrow {
+      width: 36px;
+      height: 1px;
+      background: currentColor;
+      position: relative;
+      transition: width 0.3s ease;
+    }
+
+    .btn-arrow::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -3px;
+      border-right: 1px solid currentColor;
+      border-top: 1px solid currentColor;
+      width: 6px;
+      height: 6px;
+      transform: rotate(45deg);
+    }
+
+    .btn-secondary:hover .btn-arrow {
+      width: 56px;
+    }
+
+    .hero-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      width: 42%;
+      overflow: hidden;
+      opacity: 0;
+      animation: fadeIn 1.2s 0.6s ease forwards;
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+      z-index: 1;
+      background: linear-gradient(to right, var(--black), transparent);
+    }
+
+    .hero-image::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      z-index: 1;
+      background: linear-gradient(to top, var(--black), transparent);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      filter: grayscale(20%) contrast(1.05);
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gray);
+      opacity: 0;
+      animation: fadeUp 0.8s 1.2s ease forwards;
+    }
+
+    .scroll-line {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      animation: pulse 2s infinite;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: 120px 60px;
+    }
+
+    .section-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+
+    .section-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 40px;
+    }
+
+    /* ─── ABOUT ─── */
+    #about {
+      background: var(--dark);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .about-text p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--gray-light);
+      margin-bottom: 24px;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 52px;
+    }
+
+    .stat-item {
+      border-left: 1px solid rgba(201, 168, 76, 0.3);
+      padding-left: 24px;
+    }
+
+    .stat-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-top: 8px;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img-frame {
+      position: relative;
+      border: 1px solid rgba(201, 168, 76, 0.2);
+    }
+
+    .about-img-frame::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      right: 16px;
+      bottom: 16px;
+      border: 1px solid rgba(201, 168, 76, 0.12);
+      pointer-events: none;
+    }
+
+    .about-img-frame img {
+      width: 100%;
+      display: block;
+      filter: grayscale(15%);
+    }
+
+    .about-badge {
+      position: absolute;
+      bottom: -24px;
+      right: -24px;
+      width: 120px;
+      height: 120px;
+      background: var(--gold);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-badge span:first-child {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 40px;
+      font-weight: 600;
+      color: var(--black);
+      line-height: 1;
+    }
+
+    .about-badge span:last-child {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--black);
+    }
+
+    /* ─── PRACTICE AREAS ─── */
+    #practice {
+      background: var(--black);
+    }
+
+    .practice-header {
+      max-width: 600px;
+      margin-bottom: 80px;
+    }
+
+    .practice-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .practice-card {
+      background: var(--dark2);
+      padding: 52px 40px;
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+      transition: background 0.4s ease;
+      border: 1px solid rgba(201, 168, 76, 0.0);
+    }
+
+    .practice-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+
+    .practice-card:hover {
+      background: var(--dark3);
+      border-color: rgba(201, 168, 76, 0.1);
+    }
+
+    .practice-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .practice-icon {
+      font-size: 36px;
+      margin-bottom: 28px;
+    }
+
+    .practice-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .practice-card p {
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--gray);
+    }
+
+    .practice-num {
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 64px;
+      font-weight: 300;
+      color: rgba(201, 168, 76, 0.06);
+      line-height: 1;
+    }
+
+    /* ─── TEAM ─── */
+    #team {
+      background: var(--dark);
+    }
+
+    .team-header {
+      max-width: 600px;
+      margin-bottom: 80px;
+    }
+
+    .team-grid {
+      display: flex;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--dark2);
+    }
+
+    .team-card.featured {
+      grid-row: 1;
+    }
+
+    .team-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: top center;
+      filter: grayscale(20%) contrast(1.05);
+      transition: filter 0.5s ease, transform 0.5s ease;
+      display: block;
+    }
+
+    .team-card:hover .team-img {
+      filter: grayscale(0%) contrast(1.1);
+      transform: scale(1.03);
+    }
+
+    .team-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 32px;
+      background: linear-gradient(to top, rgba(10, 10, 10, 0.98) 0%, transparent 100%);
+      transform: translateY(40px);
+      transition: transform 0.4s ease;
+    }
+
+    .team-card:hover .team-info {
+      transform: translateY(0);
+    }
+
+    .team-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .team-role {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+
+    .team-bio {
+      font-size: 12px;
+      line-height: 1.7;
+      color: var(--gray-light);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s 0.1s ease, transform 0.4s 0.1s ease;
+    }
+
+    .team-card:hover .team-bio {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── PUBLICATIONS ─── */
+    #publications {
+      background: var(--black);
+    }
+
+    .pub-header {
+      max-width: 600px;
+      margin-bottom: 80px;
+    }
+
+    .pub-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pub-card {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.4s ease;
+    }
+
+    .pub-card:hover {
+      transform: translateY(-12px);
+    }
+
+    .pub-img-wrap {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .pub-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(201, 168, 76, 0.08);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .pub-card:hover .pub-img-wrap::after {
+      opacity: 1;
+    }
+
+    .pub-img-wrap img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .pub-card:hover .pub-img-wrap img {
+      transform: scale(1.04);
+    }
+
+    .pub-info {
+      padding: 20px 0 0;
+    }
+
+    .pub-info h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+
+    .pub-authors {
+      font-size: 11px;
+      color: var(--gray);
+      line-height: 1.5;
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      background: var(--dark);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(36px, 4vw, 56px);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 28px;
+    }
+
+    .contact-info p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--gray-light);
+      margin-bottom: 48px;
+    }
+
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: var(--gold);
+    }
+
+    .contact-item-text strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+
+    .contact-item-text span {
+      font-size: 14px;
+      color: var(--gray-light);
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-group {
+      position: relative;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      padding: 16px 20px;
+      outline: none;
+      transition: border-color 0.3s ease;
+      appearance: none;
+    }
+
+    .form-group select option {
+      background: var(--dark2);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--gold);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-group label {
+      position: absolute;
+      top: 16px;
+      left: 20px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--gray);
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+
+    .form-group input:focus~label,
+    .form-group input:not(:placeholder-shown)~label,
+    .form-group textarea:focus~label,
+    .form-group textarea:not(:placeholder-shown)~label {
+      top: -10px;
+      left: 0;
+      font-size: 9px;
+      color: var(--gold);
+      background: transparent;
+      letter-spacing: 2px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 40px;
+      background: var(--gold);
+      color: var(--black);
+      border: none;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .submit-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--black);
+      transform: translateX(-100%);
+      transition: transform 0.4s ease;
+    }
+
+    .submit-btn:hover::before {
+      transform: translateX(0);
+    }
+
+    .submit-btn:hover {
+      color: var(--gold);
+    }
+
+    .submit-btn span {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(201, 168, 76, 0.1);
+      padding: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto 60px;
+    }
+
+    .footer-brand .firm-name-f {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .footer-brand .tagline-f {
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--gray);
+    }
+
+    .footer-col h5 {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 24px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 14px;
+    }
+
+    .footer-col ul li a {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-bottom p {
+      font-size: 12px;
+      color: var(--gray);
+    }
+
+    .footer-logo {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    /* ─── FLOATING DECORATION ─── */
+    .deco-line {
+      position: absolute;
+      background: rgba(201, 168, 76, 0.15);
+      pointer-events: none;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.4;
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── MOBILE NAV ─── */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 6px;
+      cursor: pointer;
+      z-index: 1100;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--gold);
+      transition: all 0.3s ease;
+    }
+
+    /* Mobile Menu State */
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: var(--black);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        transition: 0.4s ease;
+        z-index: 1050;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+      }
+    }
+
+    /* ─── SECTION ANCHOR OFFSET ─── */
+    section {
+      scroll-margin-top: 100px;
+    }
+
+    /* ─── QUOTE STRIP ─── */
+    .quote-strip {
+      background: var(--gold);
+      padding: 40px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quote-strip blockquote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(22px, 3vw, 36px);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--black);
+      text-align: center;
+      line-height: 1.4;
+      max-width: 900px;
+    }
+
+    /* ─── MEDIA ─── */
+    @media (max-width: 1024px) {
+      nav {
+        padding: 20px 32px;
+      }
+
+      nav.scrolled {
+        padding: 14px 32px;
+      }
+
+      section {
+        padding: 80px 32px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .practice-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pub-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+
+      .hero-content {
+        padding: 0 32px;
+      }
+
+      .hero-image {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .practice-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pub-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .hero-title {
+        font-size: 48px;
+      }
+
+      footer {
+        padding: 40px 32px;
+      }
+    }
+
+    /* ─── HIGHLIGHT TEXT ─── */
+    .highlight {
+      color: var(--gold);
+    }
+
+    /* ─── EXPERTISE TAG ─── */
+    .expertise-tags {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    .tag {
+      padding: 7px 16px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="Danto_Law_Firm_Logo.png" alt="Danto Law Group">
+      <div class="nav-logo-text">
+        <span class="firm-name">DANTO LAW GROUP</span>
+        <span class="tagline" data-en="Aviation Law Specialists" data-id="Spesialis Hukum Penerbangan">Aviation Law
+          Specialists</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" data-en="About" data-id="Tentang">About</a></li>
+      <li><a href="#practice" data-en="Practice Areas" data-id="Bidang Hukum">Practice Areas</a></li>
+      <li><a href="#team" data-en="Principal Attorney" data-id="Pengacara Utama">Principal Attorney</a></li>
+      <li><a href="#publications" data-en="Publications" data-id="Publikasi">Publications</a></li>
+      <li><a href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
+    </ul>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" onclick="setLang('id')">ID</button>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-en="Danto Law Group · Jakarta, Indonesia"
+        data-id="Danto Law Group · Jakarta, Indonesia">Danto Law Group · Jakarta, Indonesia</p>
+      <h1 class="hero-title">
+        <span data-en="Aviation" data-id="Hukum">Aviation</span><br>
+        <em><span data-en="Legal" data-id="Penerbangan">Legal</span></em><br>
+        <span data-en="Excellence" data-id="Terdepan">Excellence</span>
+      </h1>
+      <p class="hero-subtitle"
+        data-en="Indonesia's premier aviation law firm. Columbanus Priaardanto represents airlines, manufacturers, airports, and accident victims with unmatched depth in air law, international regulations, and aviation litigation."
+        data-id="Firma hukum penerbangan terkemuka di Indonesia. Columbanus Priaardanto mewakili maskapai, produsen, bandara, dan korban kecelakaan dengan keahlian mendalam dalam hukum udara, regulasi internasional, dan litigasi penerbangan.">
+        Indonesia's premier aviation law firm. Columbanus Priaardanto represents airlines, manufacturers, airports, and accident victims with
+        unmatched depth in air law, international regulations, and aviation litigation.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary">
+          <span data-en="Consult Now" data-id="Konsultasi Sekarang">Consult Now</span>
+          <span class="btn-arrow"></span>
+        </a>
+        <a href="#practice" class="btn-secondary">
+          <span data-en="Our Expertise" data-id="Keahlian Kami">Our Expertise</span>
+          <span class="btn-arrow"></span>
+        </a>
+      </div>
+      <div class="expertise-tags">
+        <span class="tag" data-en="Aviation Law" data-id="Hukum Udara">Aviation Law</span>
+        <span class="tag" data-en="Air Accident" data-id="Kecelakaan Udara">Air Accident</span>
+        <span class="tag" data-en="International" data-id="Internasional">International</span>
+        <span class="tag" data-en="Litigation" data-id="Litigasi">Litigation</span>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="Danto_CLose_up.png" alt="Columbanus Priaardanto">
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span data-en="Scroll to explore" data-id="Gulir untuk jelajahi">Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- QUOTE STRIP -->
+  <div class="quote-strip reveal">
+    <blockquote data-en="&ldquo;In the sky, precision is everything. In law, it is no different.&rdquo;"
+      data-id="&ldquo;Di udara, presisi adalah segalanya. Dalam hukum, tidak berbeda.&rdquo;">&ldquo;In the sky,
+      precision is everything. In law, it is no different.&rdquo;</blockquote>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="section-label" data-en="About the Firm" data-id="Tentang Firma">About the Firm</p>
+        <h2 class="section-title" data-en="Navigating the Skies of <em class='highlight'>Justice</em>"
+          data-id="Menavigasi Langit <em class='highlight'>Keadilan</em>">Navigating the Skies of <em
+            class="highlight">Justice</em></h2>
+        <div class="section-divider"></div>
+        <p data-en="Danto Law Group is a specialized aviation law firm based in Jakarta, Indonesia. Led by Columbanus Priaardanto, S.H., the firm provides deep expertise in aviation law, criminal procedure, and international air regulations."
+          data-id="Danto Law Group adalah firma hukum khusus penerbangan yang berbasis di Jakarta, Indonesia. Dipimpin oleh Columbanus Priaardanto, S.H., firma ini menyediakan keahlian mendalam dalam hukum udara, hukum acara pidana, dan regulasi udara internasional.">
+          Danto Law Group is a specialized aviation law firm based in Jakarta, Indonesia. Led by Columbanus
+          Priaardanto, S.H., the firm provides deep expertise in aviation law, criminal procedure, and
+          international air regulations.</p>
+        <p data-en="Columbanus Priaardanto has handled landmark cases including the Sriwijaya Air SJ182 accident litigation. He combines academic rigor — evidenced by multiple published legal works — with sharp courtroom advocacy that protects his clients' interests at the highest level."
+          data-id="Columbanus Priaardanto telah menangani kasus-kasus landmark termasuk litigasi kecelakaan Sriwijaya Air SJ182. Beliau menggabungkan rigor akademis — yang dibuktikan oleh berbagai karya hukum yang diterbitkan — dengan advokasi pengadilan yang tajam untuk melindungi kepentingan kliennya di tingkat tertinggi.">
+          Columbanus Priaardanto has handled landmark cases including the Sriwijaya Air SJ182 accident litigation. He combines academic
+          rigor — evidenced by multiple published legal works — with sharp courtroom advocacy that protects his clients'
+          interests at the highest level.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label" data-en="Years in Aviation Law" data-id="Tahun di Hukum Udara">Years in Aviation Law
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4</div>
+            <div class="stat-label" data-en="Published Legal Books" data-id="Buku Hukum Diterbitkan">Published Legal
+              Books</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label" data-en="Cases Handled" data-id="Kasus Ditangani">Cases Handled</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label" data-en="Aviation Awards" data-id="Penghargaan Penerbangan">Aviation Awards</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-img-frame">
+          <img src="Danto_Law_Firm_Team_Enhanced.png" alt="Danto Law Group Team">
+          <div class="about-badge">
+            <span>#1</span>
+            <span data-en="Aviation" data-id="Penerbangan">Aviation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE AREAS -->
+  <section id="practice">
+    <div class="practice-header reveal">
+      <p class="section-label" data-en="What We Do" data-id="Apa Yang Kami Lakukan">What We Do</p>
+      <h2 class="section-title" data-en="Practice <em class='highlight'>Areas</em>"
+        data-id="Bidang <em class='highlight'>Hukum</em>">Practice <em class="highlight">Areas</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="practice-grid">
+      <div class="practice-card reveal">
+        <span class="practice-num">01</span>
+        <div class="practice-icon">✈️</div>
+        <h3 data-en="Aviation Accident Litigation" data-id="Litigasi Kecelakaan Penerbangan">Aviation Accident
+          Litigation</h3>
+        <p data-en="Representing victims, families, airlines, and manufacturers in accident claims. Proven track record including major Indonesian aviation disasters."
+          data-id="Mewakili korban, keluarga, maskapai, dan produsen dalam klaim kecelakaan. Rekam jejak terbukti termasuk bencana penerbangan besar Indonesia.">
+          Representing victims, families, airlines, and manufacturers in accident claims. Proven track record including
+          major Indonesian aviation disasters.</p>
+      </div>
+      <div class="practice-card reveal">
+        <span class="practice-num">02</span>
+        <div class="practice-icon">⚖️</div>
+        <h3 data-en="Aircraft Manufacturer Liability" data-id="Tanggung Jawab Produsen Pesawat">Aircraft Manufacturer
+          Liability</h3>
+        <p data-en="Specialized counsel on product liability claims against aircraft manufacturers and component suppliers under Indonesian and international law."
+          data-id="Konsultasi khusus tentang klaim tanggung jawab produk terhadap produsen pesawat dan pemasok komponen di bawah hukum Indonesia dan internasional.">
+          Specialized counsel on product liability claims against aircraft manufacturers and component suppliers under
+          Indonesian and international law.</p>
+      </div>
+      <div class="practice-card reveal">
+        <span class="practice-num">03</span>
+        <div class="practice-icon">🌐</div>
+        <h3 data-en="International Air Law" data-id="Hukum Udara Internasional">International Air Law</h3>
+        <p data-en="Navigating the Chicago Convention, Warsaw/Montreal conventions, bilateral air service agreements, and ICAO standards for cross-border aviation matters."
+          data-id="Menavigasi Konvensi Chicago, konvensi Warsaw/Montreal, perjanjian layanan udara bilateral, dan standar ICAO untuk masalah penerbangan lintas batas.">
+          Navigating the Chicago Convention, Warsaw/Montreal conventions, bilateral air service agreements, and ICAO
+          standards for cross-border aviation matters.</p>
+      </div>
+      <div class="practice-card reveal">
+        <span class="practice-num">04</span>
+        <div class="practice-icon">📋</div>
+        <h3 data-en="Regulatory Compliance" data-id="Kepatuhan Regulasi">Regulatory Compliance</h3>
+        <p data-en="Guiding airlines, operators, and airports through Indonesian civil aviation regulations, DGCA compliance, and certification requirements."
+          data-id="Membimbing maskapai, operator, dan bandara melalui regulasi penerbangan sipil Indonesia, kepatuhan DGCA, dan persyaratan sertifikasi.">
+          Guiding airlines, operators, and airports through Indonesian civil aviation regulations, DGCA compliance, and
+          certification requirements.</p>
+      </div>
+      <div class="practice-card reveal">
+        <span class="practice-num">05</span>
+        <div class="practice-icon">🏛️</div>
+        <h3 data-en="Criminal Aviation Law" data-id="Hukum Pidana Penerbangan">Criminal Aviation Law</h3>
+        <p data-en="Defense and prosecution in criminal aviation matters under the Indonesian Criminal Code (KUHP) and Criminal Procedure Code (KUHAP)."
+          data-id="Pertahanan dan penuntutan dalam perkara pidana penerbangan berdasarkan KUHP dan KUHAP Indonesia.">
+          Defense and prosecution in criminal aviation matters under the Indonesian Criminal Code (KUHP) and Criminal
+          Procedure Code (KUHAP).</p>
+      </div>
+      <div class="practice-card reveal">
+        <span class="practice-num">06</span>
+        <div class="practice-icon">🤝</div>
+        <h3 data-en="Dispute Resolution" data-id="Penyelesaian Sengketa">Dispute Resolution</h3>
+        <p data-en="Mediation, arbitration, and litigation services for airline commercial disputes, insurance claims, and passenger rights matters."
+          data-id="Layanan mediasi, arbitrase, dan litigasi untuk sengketa komersial maskapai, klaim asuransi, dan masalah hak penumpang.">
+          Mediation, arbitration, and litigation services for airline commercial disputes, insurance claims, and
+          passenger rights matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="team">
+    <div class="team-header reveal">
+      <p class="section-label" data-en="The Attorney" data-id="Pengacara">The Attorney</p>
+      <h2 class="section-title" data-en="Principal <em class='highlight'>Attorney</em>"
+        data-id="Pengacara <em class='highlight'>Utama</em>">Principal <em class="highlight">Attorney</em></h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="team-grid">
+      <div class="team-card featured reveal">
+        <img src="Danto_CLose_up.png" alt="Columbanus Priaardanto" class="team-img" style="height:560px;">
+        <div class="team-info">
+          <div class="team-role" data-en="Principal Attorney · Aviation Law Expert"
+            data-id="Pengacara Utama · Ahli Hukum Penerbangan">Principal Attorney · Aviation Law Expert</div>
+          <div class="team-name">Columbanus Priaardanto, S.H.</div>
+          <p class="team-bio"
+            data-en="A prominent aviation law expert and author of four landmark legal publications covering air law, KUHP, KUHAP, and international aviation regulations. He has been a key commentator in major Indonesian aviation incidents."
+            data-id="Pakar hukum penerbangan terkemuka dan penulis empat publikasi hukum landmark yang mencakup hukum udara, KUHP, KUHAP, dan regulasi penerbangan internasional. Beliau menjadi komentator utama dalam insiden penerbangan besar Indonesia.">
+            A prominent aviation law expert and author of four landmark legal publications covering air law, KUHP,
+            KUHAP, and international aviation regulations. He has been a key commentator in major Indonesian aviation
+            incidents.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="pub-header reveal">
+      <p class="section-label" data-en="Legal Scholarship" data-id="Karya Ilmiah Hukum">Legal Scholarship</p>
+      <h2 class="section-title" data-en="Published <em class='highlight'>Works</em>"
+        data-id="Karya Yang <em class='highlight'>Diterbitkan</em>">Published <em class="highlight">Works</em></h2>
+      <div class="section-divider"></div>
+      <p style="font-size:14px; color:var(--gray-light); line-height:1.8;"
+        data-en="Our attorneys don't just practice law — they shape it. These published works reflect our commitment to advancing aviation legal scholarship in Indonesia."
+        data-id="Para pengacara kami tidak hanya mempraktikkan hukum — mereka membentuknya. Karya-karya yang diterbitkan ini mencerminkan komitmen kami untuk memajukan beasiswa hukum penerbangan di Indonesia.">
+        Our attorneys don't just practice law — they shape it. These published works reflect our commitment to advancing
+        aviation legal scholarship in Indonesia.</p>
+    </div>
+    <div class="pub-grid">
+      <div class="pub-card reveal">
+        <div class="pub-img-wrap">
+          <img src="Tanggung_Jawab_Hukum_Produsen_Pesawat_Udara.jpeg" alt="Tanggung Jawab Hukum Produsen Pesawat Udara">
+        </div>
+        <div class="pub-info">
+          <h4>Tanggung Jawab Hukum Produsen Pesawat Udara</h4>
+          <p class="pub-authors">Columbanus Priaardanto, S.H. &amp; Prof. Dr. H. Amad Sudiro</p>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-img-wrap">
+          <img src="KUHP.jpeg" alt="KUHP">
+        </div>
+        <div class="pub-info">
+          <h4>KUHP — Kitab Undang-undang Hukum Pidana (UU No. 1/2023)</h4>
+          <p class="pub-authors">Columbanus Priaardanto, S.H.</p>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-img-wrap">
+          <img src="KUHAP.jpeg" alt="KUHAP">
+        </div>
+        <div class="pub-info">
+          <h4>KUHAP — Kitab Undang-undang Hukum Acara Pidana</h4>
+          <p class="pub-authors">Columbanus Priaardanto, S.H. &amp; Dr. Hery Firmansyah</p>
+        </div>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-img-wrap">
+          <img src="Hukum_Udara_Internasional_Publik.jpeg" alt="Hukum Udara Internasional Publik">
+        </div>
+        <div class="pub-info">
+          <h4>Hukum Udara Internasional Publik — Regulasi, Kasus &amp; Masalah</h4>
+          <p class="pub-authors">C. Priaardanto, Elfi Amir &amp; Prof. Dr. H.K. Martono</p>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1200px; margin: 40px auto 0; text-align:center;">
+      <div class="pub-card reveal" style="display:inline-block; max-width:280px;">
+        <div class="pub-img-wrap">
+          <img src="Bunga_Rampai_Hukum_Udara.jpeg" alt="Bunga Rampai Hukum Udara">
+        </div>
+        <div class="pub-info">
+          <h4>Bunga Rampai Hukum Udara</h4>
+          <p class="pub-authors">C. Priaardanto et al. — Ed. Prof. Dr. Martono</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-label" data-en="Get in Touch" data-id="Hubungi Kami">Get in Touch</p>
+        <h2 data-en="Let's Discuss Your <em class='highlight'>Case</em>"
+          data-id="Mari Diskusikan <em class='highlight'>Kasus</em> Anda">Let's Discuss Your <em
+            class="highlight">Case</em></h2>
+        <div class="section-divider"></div>
+        <p data-en="Whether you're an airline, a manufacturer, a passenger, or a family member, Danto Law Group is ready to provide expert legal guidance in aviation matters."
+          data-id="Baik Anda maskapai, produsen, penumpang, atau anggota keluarga, Danto Law Group siap memberikan panduan hukum ahli dalam masalah penerbangan.">
+          Whether you're an airline, a manufacturer, a passenger, or a family member, Danto Law Group is ready to
+          provide expert legal guidance in aviation matters.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-item-text">
+              <strong data-en="Office" data-id="Kantor">Office</strong>
+              <span>Jakarta, Indonesia</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-item-text">
+              <strong data-en="Email" data-id="Email">Email</strong>
+              <span>info@dantolawgroup.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-item-text">
+              <strong data-en="Phone" data-id="Telepon">Phone</strong>
+              <span>+62 21 XXXX XXXX</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-item-text">
+              <strong data-en="Office Hours" data-id="Jam Kerja">Office Hours</strong>
+              <span data-en="Mon – Fri, 09:00 – 17:00 WIB" data-id="Senin – Jumat, 09.00 – 17.00 WIB">Mon – Fri, 09:00 –
+                17:00 WIB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" placeholder=" " id="fname" required>
+            <label for="fname" data-en="First Name" data-id="Nama Depan">First Name</label>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder=" " id="lname" required>
+            <label for="lname" data-en="Last Name" data-id="Nama Belakang">Last Name</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder=" " id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <select id="matter" required>
+            <option value="" disabled selected></option>
+            <option data-en="Aviation Accident" data-id="Kecelakaan Penerbangan">Aviation Accident</option>
+            <option data-en="Manufacturer Liability" data-id="Tanggung Jawab Produsen">Manufacturer Liability</option>
+            <option data-en="International Air Law" data-id="Hukum Udara Internasional">International Air Law</option>
+            <option data-en="Regulatory Compliance" data-id="Kepatuhan Regulasi">Regulatory Compliance</option>
+            <option data-en="Criminal Matters" data-id="Perkara Pidana">Criminal Matters</option>
+            <option data-en="Other" data-id="Lainnya">Other</option>
+          </select>
+          <label for="matter"
+            style="position:relative;top:auto;left:auto;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gray);display:block;margin-bottom:8px;"
+            data-en="Matter Type" data-id="Jenis Perkara">Matter Type</label>
+        </div>
+        <div class="form-group">
+          <textarea placeholder=" " id="message" rows="5" required></textarea>
+          <label for="message" data-en="Describe Your Matter" data-id="Jelaskan Perkara Anda">Describe Your
+            Matter</label>
+        </div>
+        <button class="submit-btn" onclick="handleSubmit()">
+          <span data-en="Send Inquiry" data-id="Kirim Pertanyaan">Send Inquiry</span>
+          <span class="btn-arrow" style="color:var(--black);"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="firm-name-f">DANTO LAW GROUP</div>
+        <div class="tagline-f" data-en="Aviation Law Specialists" data-id="Spesialis Hukum Penerbangan">Aviation Law
+          Specialists</div>
+        <p data-en="Indonesia's foremost aviation law firm, combining academic expertise with premier legal advocacy across all facets of aviation law."
+          data-id="Firma hukum penerbangan terkemuka Indonesia, menggabungkan keahlian akademis dengan advokasi hukum terdepan di semua aspek hukum penerbangan.">
+          Indonesia's foremost aviation law firm, combining academic expertise with premier legal advocacy across all
+          facets of aviation law.</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Practice" data-id="Layanan">Practice</h5>
+        <ul>
+          <li><a href="#practice" data-en="Aviation Accident" data-id="Kecelakaan Udara">Aviation Accident</a></li>
+          <li><a href="#practice" data-en="Manufacturer Liability" data-id="Tanggung Jawab Produsen">Manufacturer
+              Liability</a></li>
+          <li><a href="#practice" data-en="International Air Law" data-id="Hukum Udara Internasional">International Air
+              Law</a></li>
+          <li><a href="#practice" data-en="Regulatory" data-id="Regulasi">Regulatory</a></li>
+          <li><a href="#practice" data-en="Criminal Law" data-id="Hukum Pidana">Criminal Law</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Firm" data-id="Firma">Firm</h5>
+        <ul>
+          <li><a href="#about" data-en="About Us" data-id="Tentang Kami">About Us</a></li>
+          <li><a href="#team" data-en="Principal Attorney" data-id="Pengacara Utama">Principal Attorney</a></li>
+          <li><a href="#publications" data-en="Publications" data-id="Publikasi">Publications</a></li>
+          <li><a href="#contact" data-en="Contact" data-id="Kontak">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Contact" data-id="Kontak">Contact</h5>
+        <ul>
+          <li><a href="#">Jakarta, Indonesia</a></li>
+          <li><a href="mailto:info@dantolawgroup.com">info@dantolawgroup.com</a></li>
+          <li><a href="#">+62 21 XXXX XXXX</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 Danto Law Group. All Rights Reserved." data-id="© 2025 Danto Law Group. Hak Cipta Dilindungi.">
+        © 2025 Danto Law Group. All Rights Reserved.</p>
+      <img src="Danto_Law_Firm_Logo.png" alt="DLG" class="footer-logo">
+    </div>
+  </footer>
+
+  <script>
+
+
+    // ─── NAV SCROLL
+    window.addEventListener('scroll', () => {
+      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ─── REVEAL
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+
+    // ─── LANGUAGE TOGGLE
+    let currentLang = 'en';
+    function setLang(lang) {
+      currentLang = lang;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        const text = el.getAttribute('data-' + lang);
+        if (text) el.innerHTML = text;
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+      document.documentElement.lang = lang;
+      // Update select options
+      document.querySelectorAll('select option[data-en]').forEach(opt => {
+        const t = opt.getAttribute('data-' + lang);
+        if (t) opt.textContent = t;
+      });
+      // Update select label
+      const selectLabel = document.querySelector('label[for="matter"]');
+      if (selectLabel) selectLabel.textContent = lang === 'en' ? 'Matter Type' : 'Jenis Perkara';
+    }
+
+    // ─── FORM SUBMIT
+    function handleSubmit() {
+      const inputs = document.querySelectorAll('.contact-form input, .contact-form select, .contact-form textarea');
+      let isValid = true;
+      inputs.forEach(input => {
+        if (!input.value || (input.type === 'email' && !input.value.includes('@'))) {
+          isValid = false;
+          input.style.borderColor = 'red';
+          setTimeout(() => input.style.borderColor = '', 2000);
+        }
+      });
+
+      if (!isValid) return;
+
+      const btn = document.querySelector('.submit-btn span');
+      const orig = btn.textContent;
+      btn.textContent = currentLang === 'en' ? 'Sending...' : 'Mengirim...';
+      setTimeout(() => {
+        btn.textContent = currentLang === 'en' ? '✓ Message Sent' : '✓ Pesan Terkirim';
+        inputs.forEach(i => i.value = '');
+        setTimeout(() => btn.textContent = orig, 3000);
+      }, 1200);
+    }
+
+    // ─── SMOOTH SCROLL FOR NAV
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+    // ─── MOBILE MENU TOGGLE
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
